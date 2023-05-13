@@ -10,11 +10,11 @@ import com.kavenegar.sdk.models.*;
  * @author Pharshid Imanipour
  */
 public class KavehNegarSmsService implements SmsService {
-	
+
 	private static final KavenegarApi  api = new KavenegarApi("4B656662324D4E6379387A764749703836426D3473495952326C75314641646D");
 
 	private final String senderId;
-	
+
 	KavehNegarSmsService(Map<String, String> config) {
 		senderId = config.get("senderId");
 	}
@@ -25,7 +25,7 @@ public class KavehNegarSmsService implements SmsService {
 			SendResult Result = api.send("90008034", phoneNumber, message);
 			System.out.print(Result.toString());
 	    }
-	//    catch (HttpException ex) { 
+	//    catch (HttpException ex) {
 	// 		System.out.print("HttpException  : " + ex.getMessage());
 	//    }
 	   catch (ApiException ex) {

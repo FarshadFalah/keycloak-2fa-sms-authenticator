@@ -17,7 +17,7 @@ import javax.ws.rs.core.Response;
 import java.util.Locale;
 
 /**
- * @author Niko Köbler, https://www.n-k.de, @dasniko
+ * @author Niko Köbler, <a href="https://www.n-k.de">dasniko</a>, @dasniko
  */
 public class SmsAuthenticator implements Authenticator {
 
